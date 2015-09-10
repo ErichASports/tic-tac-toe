@@ -1,11 +1,56 @@
 $(function()  {
 
+	
+	
+	winningCombinations =  [['#r1c1, #r1c2, #r1c3'], ['#r2c1, #r2c2, #r2c3'], ['#r3c1, #r3c2, #r3c3'],    
+                        	['#r1c1, #r2c1, #r3c1'], ['#r1c2, #r2c2, #r3c2'], ['#r1c3, #r2c3, #r3c3'],
+                        	['#r1c1, #r2c2, #r3c3'], ['#r3c1, #r2c2, #r1c3']] 
+                        	
+
+    gameBoard = {
+        
+        r1c1 : " ", r1c2 : " ", r1c3 : " ",
+        r2c1 : " ", r2c2 : " ", r2c3 : " ", 
+    	r3c1 : " ", r3c2 : " ", r3c3 : " ",
+        }           
+ 	
+ 	var playerState = true;                       
+
 
 	$('.button').click(function(){
 		
-		alert( $(this).attr('id') )
-  });
+		//alert( $(this).attr('id') )
+		if (playerState == false) {
+
+			return;
+		}
+
+		else if (playerState == true) {
+                ($(this).click(true));
+                playerState = false;
+                alert("Player Two's Turn!")
+                }
+            else {
+                ($(this).click(true));
+                playerState == true;
+                alert("Player One's Turn!")    
+            }
+ 
+
+	var eitherPlayer = (playerOne || playerTwo) 	
+		function winCondition() {
+			if (playerOne == winningCombinations){
+				alert("Player Two Won!");
+		} else if  (playerOne == winningCombinations){
+				alert("Player One Won!");
+		} else {
+			alert("Cat's Game ... womp womp")
+		
+
 });
+
+
+
 
 
 // var playerOne == false
