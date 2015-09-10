@@ -23,6 +23,8 @@ $(function()  {
 // var leftCollum = r1c1, r2c1, r3c1
 // var midCollum = r1c2, r2c2, r3c2
 // var rightCollum = r1c3, r2c3, r3c3
+// var topLefttoRight = r1c1, r2c2, f3c3
+// var bottomLefttoRight = r3c1, r2c2, r1c3
 // //
 	//var eitherPlayer = (playerOne || playerTwo) 
 //     function findWinner() {
