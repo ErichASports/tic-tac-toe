@@ -15,12 +15,12 @@ $(function()  {
         }           
  	
  	var playerState = true;                       
-
+ 	var turn = 0; 
 
 	$('.button').click(function(){
 		
 		//alert( $(this).attr('id') )
-		if (playerState == false) {
+		if ($(this).html() !== " ") {
 
 			return;
 		}
@@ -37,17 +37,32 @@ $(function()  {
             }
  
 
-	var eitherPlayer = (playerOne || playerTwo) 	
+
+        function FirstplayerTurn() {
+        	$(this).html("X")
+        	turn++;
+
+
+        }
+
+
+	//var eitherPlayer = (playerOne || playerTwo) 	
 		function winCondition() {
-			if (playerOne == winningCombinations){
+			
+		}
+		function gameOutcome() {
+		if (playerOne == winningCombinations){
 				alert("Player Two Won!");
 		} else if  (playerOne == winningCombinations){
 				alert("Player One Won!");
 		} else {
 			alert("Cat's Game ... womp womp")
-		
+		}
 
-});
+};
+
+
+
 
 
 
