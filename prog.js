@@ -16,6 +16,7 @@ $(function () {
             // It's X's turn to go.
             $("#playerTurn").empty();
             $("#playerTurn").append("<h2>Player O's turn!</h2>");
+
             if ($(this).attr('class') === "button checked x" || $(this).attr('class') === "button checked o") {
                 console.log("This square is not EMPTY")
                 return;
@@ -35,7 +36,7 @@ $(function () {
 
 
         }
-        else {
+        else if {
             $("#playerTurn").empty();
             $("#playerTurn").append("<h2>Player X's turn!</h2>");
             if ($(this).attr('class') === "button checked x" || $(this).attr('class') === "button checked o") {
@@ -58,13 +59,23 @@ $(function () {
 
         }
         // Check for a win condition.
-        turn = turn + 1;
-        if (turn === 9) {
-            $("#result").append("<h2>" + "Cat's game ... womp womp" + "</h2>");
-        } else {
-            var outcome = winCondition();
+        //turn = turn + 1;
+        else if var outcome = winCondition(); {
             $("#result").empty();
             $("#result").append("<h2>" + outcome + "</h2>");
+            return;
+
+        // 	var outcome != winCondition(); {
+        //     $("#result").empty();
+        //     $("#result").append("<h2>" + "Cat's game ... womp womp" + "</h2>");
+        } else {
+            var outcome != winCondition(); 
+            $("#result").empty();
+            $("#result").append("<h2>" + "Cat's game ... womp womp" + "</h2>");
+
+            // var outcome = winCondition();
+            // $("#result").empty();
+            // $("#result").append("<h2>" + outcome + "</h2>");
 
         }
 
@@ -86,9 +97,9 @@ $(function () {
                 win = win_conditions[i];
                 console.log(win);
                 //X wins
-                console.log(win[0]);
-                console.log(win[1]);
-                console.log(win[2]);
+                // console.log(win[0]);
+                // console.log(win[1]);
+                // console.log(win[2]);
                 if (gameBoard[win[0]] === 1 && gameBoard[win[1]] === 1 && gameBoard[win[2]] === 1) {
 
                     X_wins = true;
