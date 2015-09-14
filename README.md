@@ -30,8 +30,8 @@ Third, after the program works(hopefully) Ill return to the styling and layout o
 	
 
 
-	Hi Ho, ,me again. So I'm having a problem with the Cat's Game function. The text appears after 9 moves even if a winner has been declaired before that. It is not supposed to do this, and I can't make it stop. Also, I haven't established a "reset" button for the game yet; if you want to play again you have to reload the page. Accordingly, I dont have a way to deep track of each players wins ans losses yet.
+Hi Ho, ,me again. So I'm having a problem with the Cat's Game function. The text appears after 9 moves even if awinner has been declaired before that. It is not supposed to do this, and I can't make it stop. Also, I haven'testablished a "reset" button for the game yet; if you want to play again you have to reload the page. Accordingly,I dont have a way to deep track of each players wins ans losses yet.
 
-	Lastly, The CSS is minimalistic at best. My focus was getting the program to work, which took me almos the entire time, so the front end is just styled enough to be organized. 
+Lastly, The CSS is minimalistic at best. My focus was getting the program to work, which took me almos the entiretime, so the front end is just styled enough to be organized. 
 
 
